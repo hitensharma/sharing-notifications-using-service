@@ -1,0 +1,60 @@
+<mat-card>
+  <h1>Sharing Messages Data between Components</h1>
+  <div>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openSnackBar()"
+      (click)="successMsg()"
+    >
+      Success Message
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openSnackBar()"
+      (click)="errorMsg()"
+    >
+      Error Message
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openSnackBar()"
+      (click)="uploadFileExistMsg()"
+    >
+      File Exist Message
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openSnackBar()"
+      (click)="uploadedMsg()"
+    >
+      Upload Message
+    </button>
+  </div>
+  <div>
+    Follow me on:
+    <mat-card-actions>
+      <button
+        mat-button
+        (click)="goToLink('https://www.linkedin.com/in/hitensharma15/')"
+      >
+        <img src="https://img.icons8.com/material/24/000000/linkedin.png" />
+      </button>
+      <button mat-button (click)="goToLink('https://github.com/hitensharma')">
+        <img src="https://img.icons8.com/material/24/000000/github.png" />
+      </button>
+      <button mat-button (click)="goToLink('https://codepen.io/hitensharma')">
+        <img src="https://img.icons8.com/material/24/000000/codepen.png" />
+      </button>
+      <button
+        mat-button
+        (click)="goToLink('https://medium.com/@hitensharma1515')"
+      >
+        <img src="https://img.icons8.com/material/24/000000/medium.png" />
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>
